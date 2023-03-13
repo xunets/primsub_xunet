@@ -15,40 +15,41 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: 📢 使用前请更新订阅，最后更新：2023.02.19, type: http, server: 127.0.0.1, port: 12663 }
+    - { name: 📢 使用前请更新订阅，最后更新：2023.03.14, type: http, server: 127.0.0.1, port: 12663 }
     - { name: 📢 请先点击全部测速后选择节点！, type: http, server: 127.0.0.1, port: 12663 }
-    - { name: 🇭🇰 HK01, type: ss, server: jsxzcm.kczz2038.online, port: 33108, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
-    - { name: 🇭🇰 HK02, type: ss, server: jsxzcm.kczz2038.online, port: 34129, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
-    - { name: 🇭🇰 HK03, type: ss, server: jsyzcm.kczz2038.online, port: 45950, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
-    - { name: 🇭🇰 HK04, type: trojan, server: dl-hk5.steamdownload.top, port: 443, password: 80fe65a7-8dac-4f4a-9252-e8fae7f84397, udp: true, sni: data-hk.xn--vur082k.cc, skip-cert-verify: true }
-    - { name: 🇭🇰 HK05, type: trojan, server: dl-hk6.steamdownload.top, port: 443, password: 80fe65a7-8dac-4f4a-9252-e8fae7f84397, udp: true, sni: data-hk.xn--vur082k.cc, skip-cert-verify: true }
-    - { name: 🇭🇰 HK06, type: trojan, server: edge-china.themars.top, port: 31101, password: 0f24311f-2fc9-4383-8372-e8b614ecb5d0, udp: true, skip-cert-verify: true }
+    - { name: 📢 敏感时期请注意访问与言论！, type: http, server: 127.0.0.1, port: 12663 }
+    - { name: 🇭🇰 HK01, type: ss, server: cnmbdcm01.kczz2038.online, port: 46951, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
+    - { name: 🇭🇰 HK02, type: ss, server: cnmbdcm01.kczz2038.online, port: 40408, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
+    - { name: 🇭🇰 HK03, type: ss, server: cnmbdcm01.kczz2038.online, port: 59996, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
+    - { name: 🇭🇰 HK04, type: ss, server: cnmbdcm01.kczz2038.online, port: 15843, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
+    - { name: 🇭🇰 HK05, type: ss, server: cmfs1.blackpink520.cyou, port: 23260, cipher: aes-128-gcm, password: 092f0346-3217-4862-982b-5c4ece14304f, udp: true }
+    - { name: 🇭🇰 HK06, type: trojan, server: microsoft-hk03.syjd.xyz, port: 30003, password: 092f0346-3217-4862-982b-5c4ece14304f, udp: true, sni: microsoft-hk02.syjd.xyz, skip-cert-verify: true }
     - { name: 🇯🇵 JP01, type: ss, server: szct.kczz2038.online, port: 49983, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
     - { name: 🇯🇵 JP02, type: ss, server: szct.kczz2038.online, port: 49873, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
-    - { name: 🇯🇵 JP03, type: ss, server: justmobile.kczz2038.online, port: 4023, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
+    - { name: 🇯🇵 JP03, type: ss, server: justmobile.kczz2038.online, port: 40240, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
     - { name: 🇯🇵 JP04, type: ss, server: szct.kczz2038.online, port: 47684, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
-    - { name: 🇯🇵 JP05, type: trojan, server: edge-china.themars.top, port: 31102, password: 0f24311f-2fc9-4383-8372-e8b614ecb5d0, udp: true, skip-cert-verify: true }
-    - { name: 🇯🇵 JP06, type: trojan, server: edge-china.themars.top, port: 31103, password: 0f24311f-2fc9-4383-8372-e8b614ecb5d0, udp: true, skip-cert-verify: true }
-    - { name: 🇨🇳 TW01, type: ss, server: jsxzcm.kczz2038.online, port: 33848, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
-    - { name: 🇨🇳 TW02, type: ss, server: jsxzcm.kczz2038.online, port: 51785, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
+    - { name: 🇯🇵 JP05, type: trojan, server: microsoft-jp03.syjd.xyz, port: 30003, password: 092f0346-3217-4862-982b-5c4ece14304f, udp: true, sni: microsoft-jp03.syjd.xyz, skip-cert-verify: true }
+    - { name: 🇯🇵 JP06, type: trojan, server: microsoft-jp04.syjd.xyz, port: 30004, password: 092f0346-3217-4862-982b-5c4ece14304f, udp: true, sni: microsoft-jp04.syjd.xyz, skip-cert-verify: true }
+    - { name: 🇨🇳 TW01, type: ss, server: cnmbdcm01.kczz2038.online, port: 40180, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
+    - { name: 🇨🇳 TW02, type: ss, server: cnmbdcm01.kczz2038.online, port: 33848, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
     - { name: 🇺🇲 US01, type: ss, server: hncm.kczz2038.online, port: 24331, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
     - { name: 🇺🇲 US02, type: ss, server: szct.kczz2038.online, port: 51779, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
-    - { name: 🇸🇬 SG01, type: ss, server: jsxzcm.kczz2038.online, port: 51033, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
-    - { name: 🇸🇬 SG02, type: trojan, server: edge-china.themars.top, port: 31107, password: 0f24311f-2fc9-4383-8372-e8b614ecb5d0, udp: true, skip-cert-verify: true }
-    - { name: 🇸🇬 SG03, type: ss, server: szct.kczz2038.online, port: 45379, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
-    - { name: 🇸🇬 SG04, type: ss, server: szct.kczz2038.online, port: 49854, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
-    - { name: 🇸🇬 SG05, type: trojan, server: qnmncnmb02.kczz2038.online, port: 61287, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true, skip-cert-verify: true }
-    - { name: 🇸🇬 SG06, type: trojan, server: qnmncnmb03.kctr2038.icu, port: 5081, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true, skip-cert-verify: true }
-    - { name: 🇭🇰 SP-HK01, type: trojan, server: dl-hk4.steamdownload.top, port: 443, password: 80fe65a7-8dac-4f4a-9252-e8fae7f84397, udp: true, sni: data-hk.xn--vur082k.cc, skip-cert-verify: true }
-    - { name: 🇭🇰 SP-HK02, type: trojan, server: dl-hk3.steamdownload.top, port: 443, password: 80fe65a7-8dac-4f4a-9252-e8fae7f84397, udp: true, sni: data-hk.xn--vur082k.cc, skip-cert-verify: true }
-    - { name: 【SP】TR, type: ss, server: szct.kczz2038.online, port: 54113, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
+    - { name: 🇸🇬 SG01, type: ss, server: cnmbdcm02.kczz2038.online, port: 40134, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
+    - { name: 🇸🇬 SG02, type: ss, server: cnmbdcm02.kczz2038.online, port: 51033, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
+    - { name: 🇸🇬 SG03, type: ss, server: cnmbdcm02.kczz2038.online, port: 38464, cipher: chacha20-ietf-poly1305, password: dd3fa2be-1bef-4534-898b-f0d5b85c485d, udp: true }
+    - { name: 🇸🇬 SG04, type: trojan, server: microsoft-si01.syjd.xyz, port: 30001, password: 092f0346-3217-4862-982b-5c4ece14304f, udp: true, sni: microsoft-si01.syjd.xyz, skip-cert-verify: true }
+    - { name: 🇸🇬 SG05, type: trojan, server: microsoft-si02.syjd.xyz, port: 30002, password: 092f0346-3217-4862-982b-5c4ece14304f, udp: true, sni: microsoft-si02.syjd.xyz, skip-cert-verify: true }
+    - { name: 🇸🇬 SG06, type: trojan, server: microsoft-si04.syjd.xyz, port: 30004, password: 092f0346-3217-4862-982b-5c4ece14304f, udp: true, sni: microsoft-si04.syjd.xyz, skip-cert-verify: true }
+    - { name: 🇭🇰 SP-HK01, type: trojan, server: microsoft-hk05.syjd.xyz, port: 30005, password: 092f0346-3217-4862-982b-5c4ece14304f, udp: true, sni: microsoft-hk05.syjd.xyz, skip-cert-verify: true }
+    - { name: 🇭🇰 SP-HK02, type: trojan, server: microsoft-hk02.syjd.xyz, port: 30002, password: 092f0346-3217-4862-982b-5c4ece14304f, udp: true, sni: microsoft-hk02.syjd.xyz, skip-cert-verify: true }
     
 proxy-groups:
     - name: Hoyuenet
       type: select
       proxies:
-          - 📢 使用前请更新订阅，最后更新：2023.02.19
+          - 📢 使用前请更新订阅，最后更新：2023.03.14
           - 📢 请先点击全部测速后选择节点！
+          - 📢 敏感时期请注意访问与言论！
           - ♻️ 自动选择
           - 🇭🇰 HK01
           - 🇭🇰 HK02
@@ -74,7 +75,6 @@ proxy-groups:
           - 🇸🇬 SG06
           - 🇭🇰 SP-HK01
           - 🇭🇰 SP-HK02
-          - 【SP】TR
 
     - name: ♻️ 自动选择
       type: url-test
@@ -106,7 +106,6 @@ proxy-groups:
           - 🇸🇬 SG06
           - 🇭🇰 SP-HK01
           - 🇭🇰 SP-HK02
-          - 【SP】TR
     
 rules:
     - 'DOMAIN-SUFFIX,services.googleapis.cn,Hoyuenet'
